@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2107 ATELIER</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/78efde65da.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="sm-links">
+        <a href="https://twitter.com/twenty1zero7?s=11&t=qg6vFvnhd1ObfGuxS05bxQ"
+          ><i class="fa-brands fa-twitter"></i
+        ></a>
+        <a href="https://instagram.com/2107__atelier?igshid=NzAzN2Q1NTE="
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a href="https://www.linkedin.com/company/2107-atelier-designs/"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a href="https://www.facebook.com/2107Atelier?mibextid=LQQJ4d"
+          ><i class="fa-brands fa-facebook"></i
+        ></a>
+      </div>
+      <div class="logo">
+        <img src="./img/circles.png" alt="" />
+      </div>
+      <div class="menu-img">
+        <i class="fa-solid fa-bars" id="toggle-btn"></i>
+      </div>
+      <div class="navbar-links">
+        <ul>
+          <li>
+            <a href="index.html" class="home"><span>Home</span></a>
+          </li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="brand-name">
+      <div class="circles">
+        <img src="./img/circles.png" alt="" />
+      </div>
+      <h1>
+        2107 <br />
+        <span>Atelier Designs</span>
+      </h1>
+    </div>
+    <div class="image-slider">
+      <script>
+        var i = 0; // Start Point
+        var images = []; // Images Array
+        var time = 2000; // Time Between Switch
+
+        // Image List
+        images[0] = "./img/image1.jpg";
+        images[1] = "./img/image2.jpg";
+        images[2] = "./img/image3.jpg";
+        images[3] = "./img/image4.jpg";
+        // Change Image
+        function changeImg() {
+          document.slide.src = images[i];
+
+          // Check If Index Is Under Max
+          if (i < images.length - 1) {
+            // Add 1 to Index
+            i++;
+          } else {
+            // Reset Back To O
+            i = 0;
+          }
+
+          // Run function every x seconds
+          setTimeout("changeImg()", time);
+        }
+
+        // Run function when page loads
+        window.onload = changeImg;
+      </script>
+      <img name="slide" width="850px" height="600px" class="slide" />
+    </div>
+    <div class="testimonial">
+      <div class="h2">
+        Testimonial
+        <div class="hr"></div>
+      </div>
+      <div class="testi-text">
+        "They should be called the <strong>Transformers</strong>. They turned a
+        very regular space to a very beautiful & functional space. Their
+        professionalism & attention to destail is second to none"
+      </div>
+      <div class="controls">
+        <input
+          type="radio"
+          name="radio-btn"
+          id="radio1"
+          onclick="changetext1()"
+        />
+        <input
+          type="radio"
+          name="radio-btn"
+          id="radio3"
+          onclick="changetext5()"
+        />
+        <input
+          type="radio"
+          name="radio-btn"
+          id="radio3"
+          onclick="changetext3()"
+        />
+      </div>
+      <script>
+        function changetext1() {
+          document.querySelector(".testi-text").innerHTML =
+            '"They should be called the <strong>Transformers</strong>. They turned a very regular space to a very beautiful & functional space. Their professionalism & attention to destail is second to none."';
+        }
+        function changetext5() {
+          document.querySelector(".testi-text").innerHTML =
+            '"I like how they refine locally sourced materials to create designs that are international standard."';
+        }
+        function changetext3() {
+          document.querySelector(".testi-text").innerHTML =
+            '"I had a wonderful experience working with this company, the designer really took time to understand my vision and brought it to life. The end result exceeded my expectation & I could not be happier with the outcome. Highly recommend!"';
+        }
+      </script>
+    </div>
+
+    <div class="footer">
+      <div class="col1">
+        <div class="logo-1">
+          <img src="./img/circles.png" alt="" />
+          <div class="name">
+            <h3>2107</h3>
+            <h3>Atelier Design</h3>
+          </div>
+        </div>
+        <p>
+          We are passionate about improving lives through exceptional design and
+          excellent execution. Our pillars are Creative Design, Experiential
+          Spaces, Excellent Delivery.
+        </p>
+        <footer>
+          Copyright © 2107 <span>Atelier</span> 2022. All rights reserved.
+        </footer>
+      </div>
+      <div class="col2">
+        <strong>QUICK LINKS</strong>
+        <div class="Q-links">
+          <div class="link1">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">our services</a></li>
+            <li><a href="#about">about</a></li>
+          </div>
+          <div class="link2">
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="#contact">contact</a></li>
+            <li><a href=""> </a></li>
+          </div>
+        </div>
+      </div>
+      <div class="col3">
+        <strong>contact us</strong>
+        <p>
+          Murjanatu house, Maitama , <br />
+          abuja
+        </p>
+        <br />
+        <a href="mailto:">2107atelier@gmail.com</a>
+        <br />
+        <p><a href="tel:">+234 (0) 814 5622 502</a></p>
+        <br />
+        <div class="sm-links">
+          <a href=""><i class="fa-brands fa-facebook"></i></a>
+          <a href=""><i class="fa-brands fa-twitter"></i></a>
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+          <a href=""><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      Copyright © 2107 <span>Atelier</span> 2022. All rights reserved.
+    </div>
+    <script>
+      const togglebtn = document.querySelector("#toggle-btn");
+      const navbarlinks = document.querySelector(".navbar-links");
+
+      togglebtn.addEventListener("click", () => {
+        navbarlinks.classList.toggle("active");
+      });
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
